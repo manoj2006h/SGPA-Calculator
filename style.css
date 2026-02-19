@@ -7,7 +7,7 @@
 /* navbar */
 
 .navbar {
-    border: 2px solid black;
+    border-bottom: 1px solid gray;
     background-color: red;
     position: fixed;
     width: 100%;
@@ -38,8 +38,9 @@
 .tables table th {
     background-color: #009879;
     color: white;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
+    border-radius: 10px;
 }
 
 .tables th ,
@@ -61,25 +62,68 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #111827;
-    color: #E5E7EB;
-}
-
-.navbar {
-    background-color: #0B1120;
+.submit-btn {
+    background-color: #8a2be2;
     color: white;
-}
-
-.hero {
-    background-color: #111827;
-    min-height: 100vh;
-}
-
-.tables table {
-    background-color: #1F2937;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
     border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.submit-btn:hover {
+    background-color: #6a1bbd;
+    transform: scale(1.05);
+}
+
+ /* color */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #373a3e;   /* soft light gray */
+    color: #111827;
+}
+.navbar {
+    background-color: #1e2025;   /* deep academic blue */
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tables table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.tables table th {
+    background-color: #0F766E;   /* muted teal */
+    color: white;
+    font-weight: 600;
+}
+.submit-btn {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #162d6b;
+}
+
 
 /* submit botton */
 
