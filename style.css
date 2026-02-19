@@ -149,6 +149,9 @@ body {
     transform: scale(1.05);
 }
 
+.result h2 {
+    color: white;
+}
 
 
 
