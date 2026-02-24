@@ -153,10 +153,80 @@ body {
     color: white;
 }
 
+/* Responsive */
 
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
 
+/* Make table scrollable on small screens */
+.tables {
+    width: 95%;
+    max-width: 1000px;
+}
 
+.tables table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+/* Mobile Devices */
+@media (max-width: 768px) {
 
+    .navbar {
+        font-size: 1.2rem;
+        height: 55px;
+        text-align: center;
+        padding: 0 10px;
+    }
 
+    .tables {
+        margin-top: 100px;
+        font-size: 0.95rem;
+        overflow-x: auto;   /* Enables horizontal scroll if needed */
+    }
 
+    .tables table th,
+    .tables table td {
+        padding: 8px;
+    }
+
+    .tables table th:nth-child(3),
+    .tables table td:nth-child(3) {
+        width: 180px;
+    }
+
+    .tables table td:nth-child(3) input {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+
+    .nav-content {
+        font-size: 1rem;
+    }
+
+    .tables {
+        font-size: 0.85rem;
+    }
+
+    .tables table th:nth-child(3),
+    .tables table td:nth-child(3) {
+        width: 150px;
+    }
+
+    .submit-btn {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
